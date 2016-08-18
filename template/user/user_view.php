@@ -31,6 +31,9 @@ if(!defined('IN_TEMPLATE'))
 	    $(content).load("<?=$_E['SITEROOT']?>user.php/view/<?=$tmpl['showid']?>/"+template+"?token="+token,function(){
             $(content).hide();
             $(content).fadeIn();
+
+        }).fail(function(){
+            alert("ERROR 500"); 
         });
 	}
 </script>
