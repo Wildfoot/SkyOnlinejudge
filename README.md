@@ -14,8 +14,18 @@ Required
 Install
 -------------
 1. Clone SKY Online Judge Repository to yout website (Don't forget to fetch submodules)
+```
+git submodule init
+git submodule update
+```
 2. Copy `config/config.example.php` to `config/config.php`
+```
+cp config/config.example.php config/config.php
+```
 3. Fill out your MySQL setting in config.php
+```
+vim config/config.php
+```
 4. Set up your database using `install/FullSQLFormat.sql`.
 5. Copy `LocalSetting.example.php` to `LocalSetting.php` then set its starting directory at `$_E['SITEDIR']`
 7. Install [composer](https://getcomposer.org/) or put composer.phar to site root
